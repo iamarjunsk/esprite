@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #10141A;
+    padding-bottom: 4rem;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+nav{
+    background-color: #1b1a1a;
+    height: 4rem;
+    padding: 0 2rem;
+}
+nav .navWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.navWrap .logo{
+    display: flex;
+    align-items: center;
+}
+nav .navWrap .profile{
+    display: flex;
+    align-items: center;
+}
+nav .navWrap .profile img{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: .5rem;
+}
+.navWrap .profile p{
+    font-size: 12px;
+    color: #fff;
+}
+.navWrap .account{
+    display: flex;
+    align-items: center;
+}
+.navWrap .account .logout{
+    margin-left: 1.5rem;
+}
+main{
+    min-height: 100vh;
+    padding-top: 1rem;
+    padding: 1rem 2rem;
+}
+main .title .backSection img{
+    width: 1rem;
+    height: 1.5rem;
+    margin-right: .7rem;
+}
+main .title .backSection{
+    font-size: 14px;
+    color: #6E707C;
+    display: flex;
+    align-items: center;
+    height: 2rem;
+}
+main .title h1{
+    font-size: 52px;
+    color: #fff;
+}
+main .formContainer{
+    margin-top: 2rem;
+    width: 100%;
+}
+main .formContainer .col-2{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+main .formContainer span{
+    flex: 1;
+}
+main .formContainer label{
+    font-family: 'Product-Sans-Bold';
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: .3rem;
+}
+main .formContainer .inp{
+    border-radius: 12px;
+    font-family: 'Product-Sans-Regular';
+    font-size: 14px;
+    background-color: #1b1a1a;
+    color: #6B6D7B;
+    padding: 1rem;
+    border: none;
+    min-width: 12rem;
+}
+main .formContainer .inpWrap{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.rel{
+    position: relative;
+}
+main .formContainer .inpWrap select{
+    appearance: none;
+    width: 100%;
+    padding: 1rem;
+}
+main .formContainer .inpWrap select option{
+    padding: 1rem;
+    height: 1rem;
+}
+
+main .formContainer .inpWrap .arrow{
+    position: absolute;
+    right: 1rem;
+}
+main .formContainer .inpWrap .selectWrap{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+main .formContainer .inpWrap textarea{
+    resize: none;
+    scroll-behavior: smooth;
+    height: 12rem;
+}
+main .formContainer .inpWrap textarea::-webkit-scrollbar{
+    display: none;
+}
+main .formContainer .inpWrap .filedrop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    height: 12rem;
+    background-color: #1b1a1a;    
+    border-radius: 12px;
+    border:1px dashed #658695;
+}
+main .formContainer .inpWrap .filedrop img{
+    width: 1rem;
+}
+main .formContainer .inpWrap .filedrop h5{
+    font-size: 20px;
+    color: #fff;
+}
+main .formContainer .inpWrap .filedrop p{
+    font-size: 16px;
+    color: #464A55;
+}
+main .formContainer .inpWrap .filedrop span{
+    color: #02D6F3;
+}
+main .formContainer button{
+    background-color: #02D6F3;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 8rem;
+    padding: .7rem;
+    color: #fff;
+    font-size: 18px;
+}
+main .formContainer .submit{
+    display: flex;
+    justify-content: end;
+}
+.hide{
+    display: none;
+}
+#filetext{
+    font-size: 12px;
+    color: #fff;
+}

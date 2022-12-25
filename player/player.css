@@ -1,0 +1,128 @@
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  background: #fff;
+  color: #111;
+  font-size: 0.8rem;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+  font-family: Gilroy-Medium;
+}
+#video{
+  position: relative;
+}
+#video .aks-video-player{
+  width: 100% !important;
+  height: 100vh !important;
+  margin-top: 0;
+  border-radius: 0;
+}
+#video .aks-video-player .aks-vp-range-buffer{
+  background: #00E2FF;
+}
+#video .aks-video-player .aks-vp-range-handler{
+  background: #00e1ff00;
+}
+#video .aks-video-player .aks-vp-rewind, #video .aks-video-player .aks-vp-forward{
+  display: none;
+}
+ 
+.github{
+    position: fixed;
+    margin: 0 auto;
+    left: -46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    background: linear-gradient(#041d48, #01112d);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    font-weight: 600;
+    cursor: pointer;
+    transform: rotate(90deg);
+    top: 30%;
+}
+.github svg{
+  margin-right:10px;
+}
+.scenesWrapper{
+  position: absolute;
+  left: 20px;
+  bottom: 4rem;
+  z-index: 20;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 25%;
+  height: 50%;
+}
+.scenesWrapper .title{
+  background: linear-gradient(0deg, #000,rgba(0,0,0,0.6606793059020483));
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-family: Product-Sans-Bold;
+  padding: .2rem .5rem;
+  font-size: 16px;
+  height: 10%;
+}
+.scenesWrapper .scenes{
+  padding: .2rem .5rem;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.6606793059020483) 49%, transparent 100%) !important;
+}
+.scenesWrapper .scenes{
+ color: #BCBCBC; 
+ height: 90%;
+ overflow: scroll;
+ scroll-behavior: auto;
+ font-family: Product-Sans-Regular; 
+}
+.scenesWrapper .scenes::-webkit-scrollbar {
+  display: none;
+}
+
+.scenesWrapper .scenes .timestamp{
+  color: #fff;
+  margin-right: .3rem;
+}
+.header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 21;
+  padding: 10px 20px;
+}
+.header .videoTitle{
+  color: #fff;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  font-family: Product-Sans-Regular;
+}
+.header .videoTitle img{
+  width: 20px;
+  height: 20px;
+  margin-right: .5rem;
+  cursor: pointer;
+}
+.positionB{
+  bottom: 0;
+}  

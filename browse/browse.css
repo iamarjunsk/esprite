@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #10141A;
+    padding-bottom: 4rem;
+}
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+nav{
+    background-color: #1b1a1a;
+    height: 4rem;
+    padding: 0 2rem;
+}
+nav .navWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.navWrap .logo{
+    display: flex;
+    align-items: center;
+}
+nav .navWrap .profile{
+    display: flex;
+    align-items: center;
+}
+nav .navWrap .profile img{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: .5rem;
+}
+.navWrap .profile p{
+    font-size: 12px;
+    color: #fff;
+}
+.navWrap .account{
+    display: flex;
+    align-items: center;
+}
+.navWrap .account .logout{
+    margin-left: 1.5rem;
+}
+
+main{
+    background-color: #10141A;
+    min-height: 100vh;
+    padding-top: 1rem;
+    padding: 1rem 2rem;
+}
+
+.posterWrap{
+    height: 20rem;
+    margin-top: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.posterWrap img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.posterWrap .movieTitle{
+    font-size: 48px;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: transparent 
+    linear-gradient(90deg, #000000 0%, #00000000 100%) 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;   
+}
+.posterWrap .movieTitle span{
+    color: #02D6F3;
+}
+
+main .videoProfile{
+    height: 6rem;
+    background-color: #1b1a1a;
+    margin-top: 2rem;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+main .videoProfile .cate{
+    
+    display: flex;
+    align-items: center;
+}
+main .videoProfile .cate .icon{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #02D6F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .videoProfile .cate .txtSec{
+    margin-left: 1rem;
+}
+main .videoProfile .cate .txtSec h3{
+    color: #fff;
+    font-size: 20px;
+}
+main .videoProfile .cate .txtSec p{
+    font-size: 14px;
+    color: #6B6D7B;
+}
+main .videoProfile .cate .arrowSec{
+    height: fit-content;
+    margin-left: 1rem;
+}
+main .videoProfile .uploadWrap{
+    border-radius: 6px;
+    width: 10rem;
+    height: 3rem;
+    background-color: #262626;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: .5rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+main .videoProfile .uploadWrap p{
+    color: #fff;
+    font-size: 16px;
+}
+main .movieList{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+main .movieList .card{
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+}
+main .movieList .card .poster{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+}   
+main .movieList .card .poster img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .65;
+}   
+main .movieList .card .data{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .7rem;
+}
+main .movieList .card .data .videoDetails h3{
+    font-size: 14px;
+    margin-bottom: .4rem;
+}
+main .movieList .card .data .videoDetails .cate span{
+    font-size: 12px;
+    background-color: #151E26;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+main .movieList .card .data .watchStatus{
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+}
+main .movieList .card .data .watchStatus .checkWrap{
+    background-color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .movieList .card .data .watchStatus .checkWrap .check{
+    border: 1px solid #29AA0A;
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+main .movieList .card .data .watchStatus .checkWrap .check img{
+    width: 100%;
+    height: 100%;
+}
+main .movieList .card .data .watchStatus .watchTxt{
+    font-size: 12px;
+    color: #10141A;
+    background: #fff;
+    border-radius: 15px;
+    width: 5rem;
+    height: 1.3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 .5rem;
+    margin-left: -1rem;
+    z-index: -2;
+}
+
+main .movieList .card .playOverlay{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+main .movieList .card .playOverlay:hover{
+    opacity: .75;
+}
+/* main .movieList .card .playOverlay .img{
+    opacity: 1 !important;
+    
+} */
+
+    
+

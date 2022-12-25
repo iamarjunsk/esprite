@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-32x32.png">
+    <title>Esprit | Upload</title>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="./upload.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="navWrap container">
+            <div class="logo"><img src="/assets/images/Image 2.png" alt=""></div>
+            <div class="account">
+                <span class="profile">
+                    <img src="/assets/images/profile.jpg" alt="">
+                    <p class="font-Museo">Akshay Bhatt</p>
+                </span>
+                <span class="logout">
+                    <img src="/assets/images/ic_fluent_sign_out_24_regular (1).svg" alt="">
+                </span>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="container">
+            <section class="title">
+                <div class="backSection">
+                    <img src="/assets/images/icons8-arrow-pointing-left-30.png" alt="">
+                    <span class="font-Regular txt">
+                        go back
+                    </span>
+                </div>
+                <h1 class="font-Bold">Upload video to library</h1>
+            </section>
+
+            <section class="formContainer">
+                <form onsubmit="formsubmit(event)" method="get">
+                    <div class="col-2 ">
+                        <span class="inpWrap">
+                            <label for="title">Title</label>
+                            <input class="inp" type="text" name="title" id="title" placeholder="Enter movie title" required>
+                        </span>
+                        <span class="inpWrap">
+                            <label for="genres">Genres</label>
+                            <div class="rel selectWrap">
+                                <select name="genres" id="genres" class="inp" required>
+                                    <option selected disabled>Select movie genres</option>
+                                    <option value="action">Action</option>
+                                    <option value="comedy">Comedy</option>
+                                    <option value="drama">Drama</option>
+                                    <option value="romace">Romance</option>
+                                </select>
+                                <div class="arrow">
+                                    <img src="/assets/images/Group 67856.svg" alt="">
+                                </div>
+
+                            </div>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="inpWrap">
+                            <label for="description">Description</label>
+                            <textarea  name="" id="description" cols="30" rows="10" class="inp" placeholder="Enter movie description" name="description" required></textarea>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="inpWrap">
+                            <label for="tags">Tags</label>
+                            <input type="text" name="tags" id="tags" placeholder="Enter movie tags ( comma “,” separated )  " class="inp" required>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="inpWrap">
+                            <label>Upload video</label>
+                            <label for="fileup">
+                            <div class="filedrop"
+                             ondrop="filedrop(event)"
+                             ondragover="fileDragOver(event)"
+                             >
+                                <img src="/assets/images/126488.svg" alt="">
+                                <h5 class="font-Regular">Drag & drop video file here</h5>
+                                <p class="font-Regular">or <span >browse file</span> from device</p>
+                            </div>
+                            </label>
+                            <input type="file" name="file" class="hide" id="fileup">
+                            <p class="font-Regular" id="filetext"></p>
+                        </span>
+                    </div>
+                    <div class="submit">
+                        <button class="font-Bold" type="submit">Upload</button>
+                    </div>
+                </form>
+            </section>
+
+        </section>
+    </main>
+    <script src="./upload.js"></script>
+</body>
+</html>
